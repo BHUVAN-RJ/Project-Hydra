@@ -1,7 +1,7 @@
 # Project Hydra: Product Plan & Curriculum
 
 *Source of truth, replacing the original spec dated April 25, 2026.*
-*Last updated: April 27, 2026.*
+*Last updated: September 11, 2026. Schedule shifted +39 days: Phase 1 now ends October 10, 2026.*
 
 ---
 
@@ -13,7 +13,7 @@ Project Hydra is a hands-on backend scale engineering learning product, built ar
 
 Two reasons, in order of importance:
 
-**For the builder (RJ):** Was rejected from an NVIDIA interview for lack of demonstrated scale experience. The traditional path to fixing this gap is "get hired somewhere with scale," which is the chicken-and-egg loop. Building this product creates the conditions to learn scale engineering deeply, generates a credible artifact for interviews, and produces a story ("I was rejected for X, I built this to address X") that lands well in hiring conversations. Goal is to be a meaningfully better backend engineer by September 2026 and to reapply to NVIDIA-tier roles with substantive evidence.
+**For the builder (RJ):** Was rejected from an NVIDIA interview for lack of demonstrated scale experience. The traditional path to fixing this gap is "get hired somewhere with scale," which is the chicken-and-egg loop. Building this product creates the conditions to learn scale engineering deeply, generates a credible artifact for interviews, and produces a story ("I was rejected for X, I built this to address X") that lands well in hiring conversations. Goal is to be a meaningfully better backend engineer by October 2026 and to reapply to NVIDIA-tier roles with substantive evidence.
 
 **For others:** People stuck in the same loop benefit from a structured, project-driven path that doesn't require getting hired first. Audience is real but smaller than the original positioning suggested. Macroeconomic data (junior tech hiring down 50%+ since 2022, CS grad unemployment at 6%+) means the audience is large in raw numbers but constrained in willingness/ability to pay. Realistic v1 outcome: a few hundred to a few thousand people get value over time, not a business.
 
@@ -21,11 +21,11 @@ The product is not optimized for becoming a business. It's optimized for: deep l
 
 ## 3. Phases and timeline
 
-**Phase 1 (April 26 → September 1, 2026): Curriculum + Blogs.**
-RJ designs the curriculum, learns each topic deeply enough to write a blog post on it, and publishes the blogs to bhuvanrj.me/essays. By September 1, all curriculum lessons are designed and the high-priority blogs are published.
+**Phase 1 (June 4 → October 10, 2026): Curriculum + Blogs.**
+RJ designs the curriculum, learns each topic deeply enough to write a blog post on it, and publishes the blogs to bhuvanrj.me/essays. By October 10, all curriculum lessons are designed and the high-priority blogs are published.
 
-**Phase 2 (May → August 2026, parallel to Phase 1): Platform built by Claude.**
-Once enough curriculum is written that the platform requirements are stable (estimated mid-May), Claude implements the platform infrastructure: Electron shell, React Flow canvas, Monaco editor, Docker orchestration, load test harness, mathematically grounded projection engine (USL fitting + queuing theory), tiered iteration modes for the load tester, basic UI for navigating lessons. RJ directs and reviews. The platform exists to host the curriculum, not as the product itself.
+**Phase 2 (June → September 2026, parallel to Phase 1): Platform built by Claude.**
+Once enough curriculum is written that the platform requirements are stable (estimated late June), Claude implements the platform infrastructure: Electron shell, React Flow canvas, Monaco editor, Docker orchestration, load test harness, mathematically grounded projection engine (USL fitting + queuing theory), tiered iteration modes for the load tester, basic UI for navigating lessons. RJ directs and reviews. The platform exists to host the curriculum, not as the product itself.
 
 **Phase 3 (September → December 2026): RJ goes through the curriculum as a user.**
 RJ implements every drill and project lesson personally, writing the actual rate limiter, load balancer, sharded database client, deployment pipeline, etc. Claude is used as a tutor and code reviewer in this phase, not as a code writer. This is where the deep coding work happens.
@@ -33,12 +33,12 @@ RJ implements every drill and project lesson personally, writing the actual rate
 **Phase 4 (October 2026 onwards): Light public release.**
 Open-source the platform code, publish the curriculum content, post on HN/r/ExperiencedDevs/relevant Discords, accept GitHub issues but no SLA. Low-burden ongoing maintenance.
 
-The September 1 milestone matters because it's when RJ starts reaching out to companies (NVIDIA reapplication, full-time role conversations). Having published blogs + designed curriculum + built platform by then provides real artifacts to reference. Phase 3 happens in parallel with that outreach.
+The October 10 milestone matters because it's when RJ starts reaching out to companies (NVIDIA reapplication, full-time role conversations). Having published blogs + designed curriculum + built platform by then provides real artifacts to reference. Phase 3 happens in parallel with that outreach.
 
 ## 4. Constraints and self-honesty notes
 
 - **20-25 hours/week** committed to this project. Total Phase 1 budget: roughly 360-450 hours.
-- **Follow-through risk:** RJ's pattern is to complete projects when there's external response or excitement. The plan should have early milestones that can be shared publicly to generate response (first three blog posts published by end of May).
+- **Follow-through risk:** RJ's pattern is to complete projects when there's external response or excitement. The plan should have early milestones that can be shared publicly to generate response (first three blog posts published by early July).
 - **Competing time:** CSCI 544 research has fixed external deadlines that take priority when conflicts arise. Curriculum work is otherwise the top priority.
 - **Internship hunt + OPT:** December 2026 OPT start is the hardest deadline. Curriculum work should not crowd out internship interview prep.
 
@@ -435,47 +435,47 @@ Estimated time: 8-10 weeks.
 
 This is what the next 18 weeks look like for RJ specifically. Each week assumes 20-25 hours.
 
-**Weeks 1-3 (April 28 - May 18):** Foundations module 1, lessons 1-3.
+**Weeks 1-3 (June 6 - June 26):** Foundations module 1, lessons 1-3.
 - Lesson 1 (API design): research, build, blog. Deep post.
 - Lesson 2 (DB fundamentals): research, build, blog. Deep post.
 - Lesson 3 (caching): research, build, blog. Deep post.
 - End of week 3: three deep blog posts published on bhuvanrj.me/essays. **First public visibility moment.** Post to HN/Twitter/LinkedIn. This is also the audience-building soft launch (see Section 8a).
 
-**Weeks 4-6 (May 19 - June 8):** Foundations lessons 4-7.
+**Weeks 4-6 (June 27 - July 17):** Foundations lessons 4-7.
 - Rate limiting (deep), queues (deep), replication (deep), sharding (deep).
 - End of week 6: foundations module complete. Curriculum design for module 1 complete.
 
-**Weeks 7-8 (June 9 - June 22):** Reliability module first half.
+**Weeks 7-8 (July 18 - July 31):** Reliability module first half.
 - Lessons 8 (timeouts/retries), 9 (circuit breakers), 10 (health checks), 11 (backpressure).
 - End of week 8: ready for the queuing theory deep dive.
 
-**Weeks 9-10 (June 23 - July 6):** Lesson 11a — Capacity planning and queuing theory.
+**Weeks 9-10 (August 1 - August 14):** Lesson 11a — Capacity planning and queuing theory.
 - This is the longest single lesson and deserves dedicated time. Read Gunther's "Guerrilla Capacity Planning" thoroughly. Read Marc Brooker's blog. Implement USL fitting against synthetic data. Write a deep blog post.
 - End of week 10: theory grounded enough to direct Claude precisely on the projection engine in Phase 2.
 
-**Week 11 (July 7 - July 13):** Reliability module wrap-up.
+**Week 11 (August 15 - August 21):** Reliability module wrap-up.
 - Lesson 12 (idempotency at scale).
 - End of week 11: reliability module complete. **Decision point: Phase 2 platform build can start in parallel here** because the curriculum structure is stable enough AND the queuing theory needed for the projection engine is now grounded.
 
-**Weeks 12-14 (July 14 - August 3):** Operations module.
+**Weeks 12-14 (August 22 - September 11):** Operations module.
 - Lessons 13-19. The CI/CD-heavy material that NVIDIA called out. Some lessons compressible since several are short posts.
 
-**Weeks 15-16 (August 4 - August 17):** Observability + Distributed systems modules.
+**Weeks 15-16 (September 12 - September 25):** Observability + Distributed systems modules.
 - Lessons 20-23 (observability), then start Lessons 24-27 (distributed systems). Aggressive compression here is fine because several lessons are short posts.
 
-**Week 17 (August 18 - August 24):** Distributed systems wrap-up + advanced topics.
+**Week 17 (September 26 - October 2):** Distributed systems wrap-up + advanced topics.
 - Finish Lessons 24-27. Start Lessons 28-30.
 
-**Week 18 (August 25 - August 31):** Buffer and final polish.
+**Week 18 (October 3 - October 9):** Buffer and final polish.
 - Catch up on slipped content. Final review. Prepare for Phase 3 launch.
 
-**September 1 milestone:** Curriculum 100% designed. Roughly 18-22 deep blog posts published, plus 8-12 shorter posts. Platform under construction (started around week 11). Audience-building cadence in motion (see Section 8a). At least one project's worth of curriculum content fully written and tested.
+**October 10 milestone:** Curriculum 100% designed. Roughly 18-22 deep blog posts published, plus 8-12 shorter posts. Platform under construction (started around week 11). Audience-building cadence in motion (see Section 8a). At least one project's worth of curriculum content fully written and tested.
 
 ## 8a. Audience-building strategy (parallel with curriculum work)
 
 The original plan had distribution as "post on HN/Reddit at launch." That's not enough. The platform launches quietly without an audience. This section corrects that by integrating audience growth into Phase 1.
 
-**Why this matters.** If September 1 arrives and the only people who know about the curriculum are personal contacts, the launch lands silently. The blogs themselves are also less effective for interviews if no one has read them. By contrast, if RJ has built a small but real audience over 18 weeks (a few hundred newsletter subscribers, recognized name in scale-engineering Twitter/Bluesky circles, occasional HN front-page hit), the launch has momentum, the artifacts have credibility, and the NVIDIA reapplication carries more weight.
+**Why this matters.** If October 10 arrives and the only people who know about the curriculum are personal contacts, the launch lands silently. The blogs themselves are also less effective for interviews if no one has read them. By contrast, if RJ has built a small but real audience over 18 weeks (a few hundred newsletter subscribers, recognized name in scale-engineering Twitter/Bluesky circles, occasional HN front-page hit), the launch has momentum, the artifacts have credibility, and the NVIDIA reapplication carries more weight.
 
 **Tactical commitments.**
 
@@ -494,7 +494,7 @@ The original plan had distribution as "post on HN/Reddit at launch." That's not 
    - **Week 12: "The math behind the Universal Scalability Law, applied to a real backend."** Coming out of Lesson 11a, this is the differentiated technical post that establishes credibility on the rigor angle. Targeted at HN front page.
 
 4. **Target metrics for Phase 1.** Realistic targets:
-   - 100-300 newsletter or RSS subscribers by September 1
+   - 100-300 newsletter or RSS subscribers by October 10
    - One HN front-page hit (top 30) somewhere in Phase 1
    - 50-200 Twitter/Bluesky followers in scale-engineering circles
    - First emailed feedback from a stranger by week 6 (signal that posts are landing beyond network)
@@ -508,11 +508,11 @@ The original plan had distribution as "post on HN/Reddit at launch." That's not 
 
 8. **Don't fake it.** Engagement bait, ghostwriting, paid promotion are all counterproductive here. The audience you need is hiring managers and senior engineers; they spot inauthenticity instantly. Slow real growth is much more valuable than fast fake growth.
 
-This strategy is conservative. It assumes most posts don't go viral and most weeks don't produce big wins. The compounding effect of consistent quality posting over 18 weeks is what produces results, not any single piece. By September 1, RJ has a small but real audience, a track record of technical writing, and a launchpad for the platform.
+This strategy is conservative. It assumes most posts don't go viral and most weeks don't produce big wins. The compounding effect of consistent quality posting over 18 weeks is what produces results, not any single piece. By October 10, RJ has a small but real audience, a track record of technical writing, and a launchpad for the platform.
 
-## 9. Phase 2: Platform construction (parallel, May-August)
+## 9. Phase 2: Platform construction (parallel, June-September)
 
-Starting around week 9 (mid-June), Claude builds the platform alongside curriculum work. Stack as originally specified:
+Starting around week 9 (early August), Claude builds the platform alongside curriculum work. Stack as originally specified:
 - Electron shell with React Flow canvas, Monaco editor, xterm.js terminals
 - Docker orchestration via Docker API
 - k6 or Locust integration for load testing

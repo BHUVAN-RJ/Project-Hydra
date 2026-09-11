@@ -215,54 +215,54 @@ Each lesson is classified as **deep** (~1 week, 3,000–5,000 word writeup, prim
 
 ```mermaid
 gantt
-    title Project Hydra — Curriculum Schedule June 17, 2026 → September 1, 2026
+    title Project Hydra — Curriculum Schedule July 26, 2026 → October 10, 2026
     dateFormat  YYYY-MM-DD
     axisFormat  %b %d
 
     section Module 1 · Foundations
-    L1 · HTTP & API Design          :l1,  2026-06-17, 5d
-    L2 · DB Fundamentals            :l2,  2026-06-22, 5d
-    L3 · Caching Patterns           :l3,  2026-06-27, 5d
-    L4 · Rate Limiting              :l4,  2026-07-02, 4d
-    L5 · Async Queues               :l5,  2026-07-06, 4d
-    L6 · DB Replication             :l6,  2026-07-10, 4d
-    L7 · Sharding                   :l7,  2026-07-14, 4d
+    L1 · HTTP & API Design          :l1,  2026-07-26, 5d
+    L2 · DB Fundamentals            :l2,  2026-07-31, 5d
+    L3 · Caching Patterns           :l3,  2026-08-05, 5d
+    L4 · Rate Limiting              :l4,  2026-08-10, 4d
+    L5 · Async Queues               :l5,  2026-08-14, 4d
+    L6 · DB Replication             :l6,  2026-08-18, 4d
+    L7 · Sharding                   :l7,  2026-08-22, 4d
 
     section Milestone
-    Module 1 complete               :milestone, m1, 2026-07-17, 0d
+    Module 1 complete               :milestone, m1, 2026-08-25, 0d
 
     section Module 2 · Reliability
-    L8  · Timeouts & Retries        :l8,  2026-07-18, 5d
-    L9  · Circuit Breakers          :l9,  2026-07-23, 3d
-    L10 · Health Checks             :l10, 2026-07-26, 2d
-    L11 · Backpressure              :l11, 2026-07-28, 5d
-    L11a · Queuing Theory + USL     :l11a,2026-08-02, 7d
-    L12 · Idempotency               :l12, 2026-08-09, 3d
+    L8  · Timeouts & Retries        :l8,  2026-08-26, 5d
+    L9  · Circuit Breakers          :l9,  2026-08-31, 3d
+    L10 · Health Checks             :l10, 2026-09-03, 2d
+    L11 · Backpressure              :l11, 2026-09-05, 5d
+    L11a · Queuing Theory + USL     :l11a,2026-09-10, 7d
+    L12 · Idempotency               :l12, 2026-09-17, 3d
 
     section Milestone
-    Module 2 complete               :milestone, m2, 2026-08-11, 0d
+    Module 2 complete               :milestone, m2, 2026-09-19, 0d
 
     section Module 3 · Operations
-    L13 · Containerization          :l13, 2026-08-12, 3d
-    L14 · Kubernetes                :l14, 2026-08-15, 4d
-    L15 · CI Pipeline Design        :l15, 2026-08-19, 4d
-    L16 · Deployment Strategies     :l16, 2026-08-23, 5d
+    L13 · Containerization          :l13, 2026-09-20, 3d
+    L14 · Kubernetes                :l14, 2026-09-23, 4d
+    L15 · CI Pipeline Design        :l15, 2026-09-27, 4d
+    L16 · Deployment Strategies     :l16, 2026-10-01, 5d
 
     section Platform (Phase 2)
-    Platform core scaffolding       :p2,  2026-08-02, 30d
+    Platform core scaffolding       :p2,  2026-09-10, 30d
 
     section Buffer
-    Buffer + catch-up               :buf, 2026-08-28, 4d
+    Buffer + catch-up               :buf, 2026-10-06, 4d
 
     section Milestone
-    September 1 checkpoint          :milestone, sept, 2026-09-01, 0d
+    October 10 checkpoint           :milestone, oct10, 2026-10-10, 0d
 ```
 
 ---
 
 ## Deliverables
 
-### By September 1, 2026
+### By October 10, 2026
 
 **Curriculum**
 
@@ -387,8 +387,8 @@ Integration exercises that pull concepts from multiple modules. Each has a reali
 
 ```mermaid
 flowchart LR
-    P1["Phase 1\nJune 17 → Sept 1 2026\n\nCurriculum design\nModules 1-3 built\nWriteups published"]
-    P2["Phase 2\nAug → Nov 2026\n\nPlatform built\nElectron + React Flow\nDocker + load engine\nProjection engine"]
+    P1["Phase 1\nJuly 26 → Oct 10 2026\n\nCurriculum design\nModules 1-3 built\nWriteups published"]
+    P2["Phase 2\nSept → Dec 2026\n\nPlatform built\nElectron + React Flow\nDocker + load engine\nProjection engine"]
     P3["Phase 3\nSept → Dec 2026\n\nUser goes through curriculum\nAll code written by user\nModules 4-6 covered\nCapstone project"]
     P4["Phase 4\nOct 2026 onward\n\nOpen-source release\nGitHub + HN launch\nCommunity issues"]
 
@@ -397,7 +397,7 @@ flowchart LR
     P3 --> P4
 ```
 
-**Phase 1 — Curriculum.** Design and build each lesson. Modules 1–3 complete by September 1.
+**Phase 1 — Curriculum.** Design and build each lesson. Modules 1–3 complete by October 10.
 
 **Phase 2 — Platform.** The platform infrastructure is built in parallel with Phase 1 curriculum work. Stack: Electron shell, React Flow canvas, Monaco editor, Docker API orchestration, k6 load test integration, USL projection engine, Prometheus + Grafana. The projection engine is the platform's primary technical differentiator — it is grounded in real queuing theory (Gunther's Universal Scalability Law) and includes explicit confidence intervals on every projection.
 
